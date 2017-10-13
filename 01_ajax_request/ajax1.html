@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX - XMLHttpRequest 1</title>
+</head>
+<body>
+    <h1>Obtención del objeto XMLHttpRequest 1</h1>
+    <button class='btn'>Verificar soporte</button>
+    <script>
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', () => {
+            // alert('AJAX');
+
+            // variable donde será instanciado el objeto XMLHttpRequest
+            let object_request;
+
+            if(window.XMLHttpRequest){ 
+
+                //obtención del objeto XMLHttpRequest de navegadores que siguen los estándares, tales como son Safari, Opera, Firefox, +IE7
+                object_request =  new XMLHttpRequest();
+                alert(`Browser moderno`);
+            } 
+            else if(window.ActiveXObject("Microsoft.XMLHTTP")){
+                
+                //obtención del objeto XMLHttpRequest de navegadores viejos, principalmente versiones inferiores a IE 6
+                object_request = new ActiveXObject();
+                alert(`Browser obsoleto`);
+            }
+        });
+
+    </script>
+</body>
+</html>

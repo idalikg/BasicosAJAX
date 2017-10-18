@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX - XMLHttpRequest 2</title>
+</head>
+<body>
+    <h1>Carga con AJAX</h1>
+    <button>VER INFORMACIÓN</button>
+    <fieldset id='content'>
+        <legend><h3>Contenido:</h3></legend>
+    </fieldset>
+    <script>
+
+        var btn = document.querySelector('button');
+
+        var contenido = document.querySelector('#content');
+
+        var objectRequest;
+
+        // Obtenión del objeto XMLHttpRequest
+        if(window.XMLHttpRequest){
+            objectRequest = new XMLHttpRequest();
+        } else {
+            objectRequest =  new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+
+        function showInfo(){
+
+            // Declaración de la función que procesará la respuesta del servidor
+            objectRequest.onreadystatechange = () => {
+
+                // Impresión en consola del avance de la conexión con el servidor
+                // console.log(`readyState : ${objectRequest.readyState}`);
+
+                // si la petición ha sido finalizada y si es válida
+                if(objectRequest.readyState == 4 && objectRequest.status == 200) {
+                    informacion = objectRequest.responseText;
+                    contenido.innerHTML += informacion;
+                }
+            };
+
+            // Creación de la peticón HTTP
+            objectRequest.open('GET','testfile.txt',true);
+
+            // Envio de la petición al servidor
+            objectRequest.send();
+        }
+
+        // Asignación de evento al 'showInfo' al botón
+        btn.addEventListener('click', showInfo);
+
+
+    </script>
+</body>
+</html>

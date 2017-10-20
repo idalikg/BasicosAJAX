@@ -1,0 +1,38 @@
+[
+    {
+        "nombre" : "Helio",
+        "simbolo" : "He",
+        "num_atomico" : 2, 
+        "masa_atomica" : 4.002
+    },
+    {
+        "nombre" : "Neón",
+        "simbolo" : "Ne",
+        "num_atomico" : 10,
+        "masa_atomica" : 20.179
+    },
+    {
+        "nombre" : "Argón",
+        "simbolo" : "Ar",
+        "num_atomico" : 18,
+        "masa_atomica" : 39.948
+    },
+    {
+        "nombre" : "Criptón",
+        "simbolo" : "Kr",
+        "num_atomico" : 36,
+        "masa_atomica" : 83.8
+    },
+    {
+        "nombre" : "Xenón",
+        "simbolo" : "Xe",
+        "num_atomico" : 54,
+        "masa_atomica" : 131.29
+    },
+    {
+        "nombre" : "Radón",
+        "simbolo" : "Rn",
+        "num_atomico" : 86,
+        "masa_atomica" : 222.017
+    }
+]

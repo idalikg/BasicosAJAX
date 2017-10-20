@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX & JSON</title>
+    <style>
+        html, body{
+            font-size: 24px;
+        }
+        button{
+            background: black;
+            color: white;
+            font-size: 1em;
+            margin:1em auto;
+            padding: .75em;
+            text-align: center;
+            vertical-align: top;
+            width: 20%;
+        }
+        h1{
+            background: brown;
+            color: white;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+        }
+        .read{
+            border-top: red solid;
+            color: darkblue;
+            padding: .5em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>AJAX & JSON</h1>
+    <h3>Lectura de un archivo .json con AJAX</h3>
+    <button id="btn_view">VER INFO</button>
+    <button id="btn_clear">OCULTAR INFO</button>
+    <section class="read"></section>
+    <script src="request.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body{
+    font-size: 18px;
+    text-align: center;
+}
+
+button{
+    padding: 1em;
+    background: black;
+    color: white;
+    width: 20%;
+}
+
+h1{
+    width: 100%;
+    background: black;
+    color: white;
+    padding: .50em;
+    margin: 0 auto;
+}
+
+h3{
+    padding: .75em;
+}
+
+section{
+    border-top: 5px solid orange;
+    margin: .5em auto;
+    width: 50%;
+}

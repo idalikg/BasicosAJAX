@@ -1,0 +1,17 @@
+{
+    "Titanic" : {
+        "estreno" : 1998,
+        "director" : "James Cameron",
+        "tipo" : "Dramática"
+    },
+    "Back to the future" : {
+        "estreno" : 1985,
+        "director" : "Robert Zemeckis",
+        "tipo" : "Ciencia ficción"
+    },
+    "Ghost Ship" : {
+        "estreno" : 2002,
+        "director" : " Steve Beck",
+        "tipo" : "Terror"
+    }
+}
